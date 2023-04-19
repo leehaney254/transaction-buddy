@@ -29,3 +29,8 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+# Ignore environment varisbles
+/.env
+.env
+node_modules/
