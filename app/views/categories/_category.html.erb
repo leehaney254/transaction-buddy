@@ -1,13 +1,9 @@
 <div id="<%= dom_id category %>">
-  <p>
-    <strong>Name:</strong>
+
+  <div class="category-card">
+    <%= image_tag(category.icon, class: "category-image") %>
     <%= category.name %>
-  </p>
-  <p>
-    <% if resource.image.attached? %>
-      <strong>Name:</strong>
-      <%= image_tag(category.icon, style:) %>
-    <% end %>
-  </p>
+    <p>$45.02</p>
+  </div>
 
 </div>

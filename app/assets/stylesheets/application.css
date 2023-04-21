@@ -13,3 +13,19 @@
  *= require_tree .
  *= require_self
  */
+
+.category-image {
+  width: 3rem;
+  height: 3rem;
+}
+
+body {
+  background: #f9f9f9;
+}
+
+.category-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem 0.5rem;
+  margin: 1rem 2rem;
+}
