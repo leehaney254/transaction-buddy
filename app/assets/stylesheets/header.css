@@ -18,3 +18,11 @@
   text-decoration: none;
   color: #fff;
 }
+
+.transaction-total {
+  background-color: #3778c2;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  padding: 0 0.5rem;
+}

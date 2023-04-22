@@ -1,6 +1,6 @@
 .registration-head {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   padding: 1rem 0.5rem;
   color: #fff;
   background-color: #3778c2;
@@ -43,6 +43,14 @@ input:focus {
 .new-head {
   display: flex;
   justify-content: space-between;
+  padding: 1rem 0.5rem;
+  color: #fff;
+  background-color: #3778c2;
+}
+
+.new-save {
+  display: flex;
+  justify-content: flex-end;
   padding: 1rem 0.5rem;
   color: #fff;
   background-color: #3778c2;
