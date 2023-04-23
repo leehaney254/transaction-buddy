@@ -15,14 +15,15 @@
       </ul>
     </div>
   <% end %>
+  <div class="sign-color">
+    <div class="field form-div">
+      <% form.label :name, style: "display: block"%>
+      <%= form.text_field :name, placeholder: "Name", class: "form-input" %>
+    </div>
 
-  <div class="field form-div">
-    <% form.label :name, style: "display: block"%>
-    <%= form.text_field :name, placeholder: "Name", class: "form-input" %>
-  </div>
-
-  <div class="field form-div">
-    <%= form.label :icon, style: "display: block" %>
-    <%= form.file_field :icon %>
+    <div class="field form-div">
+      <%= form.label :icon, style: "display: block" %>
+      <%= form.file_field :icon %>
+    </div>
   </div>
 <% end %>
