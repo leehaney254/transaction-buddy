@@ -66,6 +66,10 @@ input:focus {
   width: 50%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0.8rem;
+  background-color: #fff;
+  margin-top: 1.5rem;
 }
 
 .sign-color {

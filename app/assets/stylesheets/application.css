@@ -26,7 +26,8 @@ body {
 .category-card {
   display: flex;
   justify-content: space-between;
-  padding: 0.8rem 0.5rem;
+  align-items: center;
+  padding: 1rem 0.8rem;
   margin: 1rem 2rem;
 }
 
