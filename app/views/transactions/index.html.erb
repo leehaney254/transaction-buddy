@@ -12,8 +12,12 @@
 <p style="color: green"><%= notice %></p>
 
 <div id="transactions">
-  <% @transactions.each do |transaction| %>
-    <%= render transaction %>
+  <% if @transactions.empty? %>
+      <div class="message">There are no transactions to display. Add one.</div>
+    <% else %>
+    <% @transactions.each do |transaction| %>
+      <%= render transaction %>
+    <% end %>
   <% end %>
 </div>
 
