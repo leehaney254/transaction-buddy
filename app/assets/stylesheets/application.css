@@ -72,3 +72,9 @@ body {
   background-color: #F5F5F5;
   font-family: 'Montserrat', sans-serif;
 }
+
+.message {
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+}

@@ -3,8 +3,12 @@
   <p style="color: green"><%= notice %></p>
 
   <div id="categories">
-    <% @categories.each do |category| %>
-      <%= render category %>
+    <% if @categories.empty? %>
+      <div class="message">There are no categories to display. Add one.</div>
+    <% else %>
+      <% @categories.each do |category| %>
+        <%= render category %>
+      <% end %>
     <% end %>
   </div>
 
