@@ -9,24 +9,26 @@
       <%= f.submit "Next", class: "registration-button" %>
     </div>
   </div>
-  <div class="field form-div">
-    <% f.label :email %>
-    <%= f.email_field :email, autofocus: true, autocomplete: "email", required: true, placeholder: "Email", class: "form-input" %>
-  </div>
+  <div class="sign-color">
+    <div class="field form-div">
+      <% f.label :email %>
+      <%= f.email_field :email, autofocus: true, autocomplete: "email", required: true, placeholder: "Email", class: "form-input" %>
+    </div>
 
-  <div class="field form-div">
-    <% f.label :name %>
-    <%= f.text_field :name, autofocus: true, autocomplete: "text", required: true, placeholder: "Name", class: "form-input" %>
-  </div>
+    <div class="field form-div">
+      <% f.label :name %>
+      <%= f.text_field :name, autofocus: true, autocomplete: "text", required: true, placeholder: "Name", class: "form-input" %>
+    </div>
 
-  <div class="field form-div">
-    <% f.label :password %>
-    <%= f.password_field :password, autocomplete: "new-password", placeholder: "password (6 character minimum)", class: "form-input" %>
-  </div>
+    <div class="field form-div">
+      <% f.label :password %>
+      <%= f.password_field :password, autocomplete: "new-password", placeholder: "password (6 character minimum)", class: "form-input" %>
+    </div>
 
-  <div class="field form-div">
-    <% f.label :password_confirmation %>
-    <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder: "Password Confirmation", class: "form-input" %>
+    <div class="field form-div">
+      <% f.label :password_confirmation %>
+      <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder: "Password Confirmation", class: "form-input" %>
+    </div>
   </div>
 <% end %>
 
