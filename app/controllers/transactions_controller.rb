@@ -3,7 +3,9 @@ class TransactionsController < ApplicationController
 
   # GET /transactions or /transactions.json
   def index
-    @transactions = Transaction.order(created_at: :desc)
+    @category = Category.find(params[:category_id])
+    @transactions = @category.transactions.order(created_at: :desc)
+    @total = @category.transactions.sum(:amount)
   end
 
   # GET /transactions/1 or /transactions/1.json

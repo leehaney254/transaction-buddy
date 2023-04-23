@@ -6,7 +6,7 @@
     <i class="bi bi-list"></i>
 </div>
 <div class="transaction-total">
-  <p>Total Amount: 45</p>
+  <p>Total Amount: <%= @total %></p>
   <%= link_to "sign out", destroy_user_session_path, method: :delete, class: "header-link" %>
 </div>
 <p style="color: green"><%= notice %></p>
