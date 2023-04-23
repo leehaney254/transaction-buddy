@@ -18,7 +18,7 @@
 }
 
 .form-div {
-  border-bottom: solid #E5E4E2 1px;
+  border-bottom: solid #e5e4e2 1px;
   padding: 1rem 0;
   margin: 0 1rem;
 }
@@ -37,7 +37,7 @@ input:focus {
 }
 
 .question {
-  color: #B6B6B4;
+  color: #b6b6b4;
 }
 
 .new-head {
