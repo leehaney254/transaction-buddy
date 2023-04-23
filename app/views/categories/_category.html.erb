@@ -3,7 +3,7 @@
     <div class="category-card">
       <%= image_tag(category.icon, class: "category-image") %>
       <%= category.name %>
-      <p>$45.02</p>
+      <p><%= category.transactions.sum(:amount)%></p>
     </div>
   <% end %>
 </div>

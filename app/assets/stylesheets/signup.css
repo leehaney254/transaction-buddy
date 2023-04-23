@@ -55,3 +55,15 @@ input:focus {
   color: #fff;
   background-color: #3778c2;
 }
+
+#transactions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.transaction-card {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
