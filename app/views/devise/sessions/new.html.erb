@@ -9,12 +9,12 @@
   <div class="sign-color">
     <div class="field form-div">
       <% f.label :email %>
-      <%= f.email_field :email, autofocus: true, autocomplete: "email", required: true, placeholder: "Email", class: "form-input" %>
+      <%= f.email_field :email,  id: "Email", autofocus: true, autocomplete: "email", required: true, placeholder: "Email", class: "form-input" %>
     </div>
 
     <div class="field form-div">
       <% f.label :password %>
-      <%= f.password_field :password, autocomplete: "current-password", placeholder: "Password", class: "form-input" %>
+      <%= f.password_field :password,  id: "Password", autocomplete: "current-password", placeholder: "Password", class: "form-input" %>
     </div>
 
     <% if devise_mapping.rememberable? %>
