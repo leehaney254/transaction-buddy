@@ -59,7 +59,7 @@ group :development, :test do
   gem 'capybara'
 
   gem 'selenium-webdriver'
-  gem 'chromedriver-helper'
+  gem 'webdrivers'
 end
 
 group :development do
@@ -75,5 +75,4 @@ end
 
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
-  gem 'webdrivers'
 end
