@@ -1,15 +1,15 @@
 require 'rails_helper'
 
-RSpec.describe Category, type: :model do 
+RSpec.describe Category, type: :model do
   context 'validation tests' do
     # You cannot create a user twice with the same credentials,
     # hence this code must be run once
-    first_user = User.create(name: 'Spice', email: "testingstwo@gmail.com", password: "Leonileo" )
+    first_user = User.create(name: 'Spice', email: 'testingstwo@gmail.com', password: 'Leonileo')
     before(:each) do
       icon = fixture_file_upload(Rails.root.join('spec/fixtures/icons/icon.jpg'), 'image/jpg')
-      @first_category = Category.create(name: 'Food', icon: icon, user_id: first_user.id)
+      @first_category = Category.create(name: 'Food', icon:, user_id: first_user.id)
     end
-    
+
     it 'is is created succefully' do
       expect(@first_category).to be_valid
     end
