@@ -57,7 +57,7 @@ The hosted app can be found [here]()
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Loom Video <a name="Loom Video"></a>
-The loom video can be found [here]()
+The loom video can be found [here](https://www.loom.com/share/fa741293953d4f28ae67bec739a25c1a)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- Features -->
