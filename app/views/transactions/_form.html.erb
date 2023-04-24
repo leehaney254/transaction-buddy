@@ -28,7 +28,7 @@
     </div>
 
     <div class="field form-div">
-      <%= form.select :category_id,  id: "Category", options_for_select([['Select a category', '']] + Category.all.map { |c| [c.name, c.id] }),  class: "form-input"  %>
+      <%= form.select :category_id, options_for_select([['Select a category', '']] + Category.all.map { |c| [c.name, c.id] }), {}, { class: "form-input" } %>
     </div>
   </div>
   
