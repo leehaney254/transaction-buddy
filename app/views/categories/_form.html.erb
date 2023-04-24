@@ -18,11 +18,11 @@
   <div class="sign-color">
     <div class="field form-div">
       <% form.label :name, style: "display: block"%>
-      <%= form.text_field :name, placeholder: "Name", class: "form-input" %>
+      <%= form.text_field :name, id: "Name", placeholder: "Name", class: "form-input" %>
     </div>
 
     <div class="field form-div">
-      <%= form.label :icon, style: "display: block" %>
+      <%= form.label :icon, id: "Icon", style: "display: block" %>
       <%= form.file_field :icon %>
     </div>
   </div>
