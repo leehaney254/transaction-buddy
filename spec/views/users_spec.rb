@@ -1,7 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe 'Users', type: :feature do
-  
   scenario 'show home page' do
     visit root_path
     assert page.has_content?('transaction-buddy')
@@ -18,7 +17,7 @@ RSpec.describe 'Users', type: :feature do
   end
 
   scenario 'show sign-in page' do
-    first_user = User.create(name: 'Spice', email: 'capyone@gmail.com', password: 'Leonileo')
+    User.create(name: 'Spice', email: 'capyone@gmail.com', password: 'Leonileo')
     visit new_user_session_path
     fill_in('Email', with: 'testingsone@gmail.com')
     fill_in('Password', with: 'Leonileo')
