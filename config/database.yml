@@ -86,6 +86,7 @@ test:
 production:
   <<: *default
   database: transaction_buddy_production
+  username: transaction_buddy
+  password: <%= ENV["TRANSACTION_BUDDY_DATABASE_PASSWORD"] %>
   username: <%= ENV['POSTGRES_USERNAME'] %>
   password: <%= ENV['POSTGRES_PASSWORD'] %>
-  url: <%= ENV["DATABASE_URL"] %>
