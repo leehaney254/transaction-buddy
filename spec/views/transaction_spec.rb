@@ -1,7 +1,7 @@
 require 'rails_helper'
 
-RSpec.describe 'Categories', type: :feature do
-  before(:each) do
+RSpec.describe 'Transactions', type: :feature do
+  before(:all) do
     first_user = User.create(name: 'Spice', email: 'capytwo@gmail.com', password: 'Leonileo')
     visit new_user_session_path
     fill_in('Email', with: 'capytwo@gmail.com')
@@ -11,17 +11,14 @@ RSpec.describe 'Categories', type: :feature do
 
   scenario 'show categories page' do
     sleep(1)
-    visit categories_path
-    assert page.has_content?('Categories')
-  end
-
-  scenario 'create new category' do
-    sleep(1)
     icon_path = Rails.root.join('spec/fixtures/icons/icon.jpg')
     visit new_category_path
     fill_in('Name', with: 'shopping')
     attach_file('Icon', icon_path)
     click_button 'Save'
-    assert page.has_content?('Category was successfully created.')
+    sleep(1)
+    find('.card-link').click
+    sleep(1)
+    assert page.has_content?('Transactions')
   end
 end
