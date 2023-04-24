@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe Category, type: :model do
+RSpec.describe Transaction, type: :model do
   context 'validation tests' do
     # You cannot create a user twice with the same credentials,
     # hence this code must be run once
