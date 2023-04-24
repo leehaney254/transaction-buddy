@@ -18,7 +18,7 @@ RSpec.describe 'Users', type: :feature do
   end
 
   scenario 'show sign-in page' do
-    first_user = User.create(name: 'Spice', email: 'testingsone@gmail.com', password: 'Leonileo')
+    first_user = User.create(name: 'Spice', email: 'capyone@gmail.com', password: 'Leonileo')
     visit new_user_session_path
     fill_in('Email', with: 'testingsone@gmail.com')
     fill_in('Password', with: 'Leonileo')
